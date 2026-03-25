@@ -1,0 +1,30 @@
+# This is a comment and is ignored
+
+# Ignore specific files
+# Environment variable file
+.env    
+
+# Ignore all files with a certain extension
+*.log
+*.tmp
+*.backup
+
+# Ignore entire directories
+#Virtual Environment
+/.venv/  
+
+#backup folder
+/..backups/  
+
+#Test folders
+/maximo_ai/  
+/maxrest/   
+
+# cache folder
+/__pycache__/ 
+
+
+# Use a prefix of ! to negate a pattern and re-include a specific file
+# This ignores all .log files, except important.log
+*.log
+!important.log
