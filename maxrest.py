@@ -1,4 +1,5 @@
 import sqlite3
+from fastapi.responses import HTMLResponse
 import pandas as pd
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException
@@ -68,7 +69,8 @@ def init_db():
 # ---------- ROUTES ----------
 @app.get("/")
 def read_root():
-    return "<html><p>Welcome to my page</p></html>"
+    welcome_page="<html><p>Welcome to Maximo</p></html>"
+    return HTMLResponse(content=welcome_page,status_code=200)
 
 @app.post("/maxrest/rest/mbo/person")
 def add_person(person: Person):
