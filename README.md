@@ -8,10 +8,10 @@
   -  Clone the project with this command'_git clone https://github.com/sankargh/maxrest_ai.git_'
 
 **Run:**
-  First, run the below command - To start the Rest API application.
-  -  uv run maxrest.py
-  Then, open another Terminal, to run the agent script
-  -  uv run agent.py
+  -  First, run the below command - To start the Rest API application.
+      -  uv run maxrest.py
+  -  Then, open another Terminal, to run the agent script
+      -  uv run agent.py
   -  A chat interface is now accessible typically at --> http://127.0.0.1:7860
 
 **Test:**
